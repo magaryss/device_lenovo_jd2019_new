@@ -25,4 +25,7 @@
     <!-- Default screen brightness, from 0 to 255. 82 is 32%. -->
     <integer name="def_screen_brightness">70</integer>
 
+    <!-- Set the automatic Bluetooth mode on by default -->
+    <bool name="def_bluetooth_on">false</bool>
+
 </resources>
