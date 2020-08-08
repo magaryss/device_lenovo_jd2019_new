@@ -155,10 +155,6 @@ PRODUCT_BOOT_JARS += \
 PRODUCT_PACKAGES += \
     PixelLiveWallpaperPrebuilt
 
-# Recorder
-PRODUCT_PACKAGES += \
-    KimciRecorder
-
 # Charging
 PRODUCT_PACKAGES += \
     charger_res_images \
