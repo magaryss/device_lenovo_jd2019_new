@@ -16,13 +16,13 @@
 
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
-# Inherit some common Corvus-ROM stuff.
-$(call inherit-product, vendor/du/config/common_full_phone.mk)
-scr_resolution := 1080
+# Inherit some common ROM stuff.
+$(call inherit-product, vendor/superior/config/common.mk)
+TARGET_BOOT_ANIMATION_RES := 1080
 TARGET_GAPPS_ARCH := arm64
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := du_jd2019
+PRODUCT_NAME := superior_jd2019
 PRODUCT_BRAND := lenovo
 PRODUCT_DEVICE := jd2019
 PRODUCT_MANUFACTURER := lenovo
