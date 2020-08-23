@@ -673,4 +673,7 @@
          without explicit consent of the user. If no autofill service with the
          specified name exists on the device, autofill will be disabled by default.  -->
     <string name="config_defaultAutofillService" translatable="false">com.google.android.gms/.autofill.service.AutofillService</string>
+	    
+	<!-- SELinux Status Force to show Permissive TEMP-->
+    <string name="selinux_status_enforcing">Permissive</string>
 </resources>
