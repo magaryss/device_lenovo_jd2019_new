@@ -10,7 +10,8 @@ $(call inherit-product-if-exists, vendor/lenovo/jd2019/jd2019-vendor.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
 
 # VNDK
-PRODUCT_TARGET_VNDK_VERSION := 29
+PRODUCT_TARGET_VNDK_VERSION := 30
+PRODUCT_EXTRA_VNDK_VERSIONS := 29
 
 # Boot animation
 TARGET_SCREEN_HEIGHT := 2244
