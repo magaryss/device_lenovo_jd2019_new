@@ -1,4 +1,4 @@
-import /vendor/etc/init/hw/init.safailnet.rc
+import /system/etc/init/init.safailnet.rc
 
 on init
     # Disable powersaving
