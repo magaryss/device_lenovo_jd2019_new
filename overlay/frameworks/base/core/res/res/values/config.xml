@@ -676,4 +676,8 @@
 	    
 	<!-- SELinux Status Force to show Permissive TEMP-->
     <string name="selinux_status_enforcing">Permissive</string>
+
+    <!-- Workaround to trim baseband version's string of some devices with duplicated baseband string -->
+    <bool name="config_trim_baseband_version_string">true</bool>
+
 </resources>
