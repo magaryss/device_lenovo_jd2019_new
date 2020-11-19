@@ -90,7 +90,7 @@ PRODUCT_COPY_FILES += \
 
 # Lights
 PRODUCT_PACKAGES += \
-    android.hardware.light@2.0-service.lenovo_jd2019
+    android.hardware.light@2.0-service.lenovo_sdm710
 
 # Livedisplay
 PRODUCT_PACKAGES += \
