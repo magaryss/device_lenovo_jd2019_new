@@ -7,15 +7,6 @@ PRODUCT_PRODUCT_PROPERTIES += \
    vendor.bluetooth.soc=cherokee \
    ro.vendor.fm.use_audio_session=true
 
-# Camera
-PRODUCT_PRODUCT_PROPERTIES += \
-    persist.vendor.camera.expose.aux=1 \
-    ro.config.zuk.has_ir_camera=true \
-    sys.camera.packagename.zui=1 \
-    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
-    persist.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
-    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,com.zui.camera 
-
 # Graphics
 PRODUCT_PRODUCT_PROPERTIES += \
     debug.sf.enable_hwc_vds=1 \
@@ -49,7 +40,7 @@ PRODUCT_PRODUCT_PROPERTIES += \
 
 #Privaap Permissions
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
-    ro.control_privapp_permissions=log
+    ro.control_privapp_permissions=disabled
 
 # Zygote
 PRODUCT_PRODUCT_PROPERTIES += \
@@ -63,3 +54,27 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.heaptargetutilization=0.75 \
     dalvik.vm.heapminfree=4m \
     dalvik.vm.heapmaxfree=16m
+
+#Camera
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    persist.camera.HAL3.enabled=1 \
+    persist.vendor.camera.HAL3.enabled=1 \
+    persist.camera.stats.test=5 \
+    persist.vendor.camera.stats.test=5 \
+    ro.camera.hfr.enable=1 \
+    ro.camera.relight.enable=0 \
+    ro.camera.attr.detect.enable=1 \
+    camera.disable_zsl_mode=true \
+    persist.vendor.camera.isp.turbo=1 \
+    persist.vendor.camera.set.afd=4 \
+    persist.bokeh.switch.lux=290 \
+    persist.vendor.camera.auxswitch.threshold=330 \
+    persist.vendor.camera.mainswitch.threshold=419 \
+    persist.vendor.camera.expose.aux=1 \
+    persist.vendor.camera.CDS=Off \
+    ro.config.zuk.has_ir_camera=true \
+    sys.camera.packagename.zui=1 \
+    persist.vendor.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
+    persist.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
+    vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.zui.camera \
+    vendor.camera.aux.packagelist2=com.motorola.motocit,com.zui.camera.yuvtest
