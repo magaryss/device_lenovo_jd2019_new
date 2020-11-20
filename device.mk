@@ -44,7 +44,9 @@ PRODUCT_PACKAGES += \
 
 # Device-specific settings
 PRODUCT_PACKAGES += \
-    LenovoParts
+    LenovoParts \
+    libhidltransport \
+    libhwbinder
 
 # Dex preopt
 PRODUCT_DEXPREOPT_SPEED_APPS += \
@@ -64,13 +66,13 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.fingerprint.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/android.hardware.fingerprint.xml
 
 # FM
-#PRODUCT_PACKAGES += \
-#    FM2 \
-#    libqcomfm_jni \
-#    qcom.fmradio
+PRODUCT_PACKAGES += \
+    FM2 \
+    libqcomfm_jni \
+    qcom.fmradio
 
-#PRODUCT_BOOT_JARS += \
-#    qcom.fmradio
+PRODUCT_BOOT_JARS += \
+    qcom.fmradio
 
 # HIDL
 PRODUCT_PACKAGES += \
