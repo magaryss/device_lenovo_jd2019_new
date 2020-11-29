@@ -78,3 +78,10 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     persist.camera.privapp.list=org.codeaurora.snapcam,com.zui.camera \
     vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.android.camera,org.lineageos.snap,com.zui.camera \
     vendor.camera.aux.packagelist2=com.motorola.motocit,com.zui.camera.yuvtest
+
+#Blur
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.surface_flinger.supports_background_blur=1 \
+    ro.sf.blurs_are_expensive=1 \
+    debug.sf.latch_unsignaled=1 \
+    debug.sf.disable_backpressure=1
